@@ -1,0 +1,302 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones</title>
+    <style>
+        :root {
+            --primary-color: #333333;
+            --accent-color: #1a1a1a;
+            --dark-color: #000000;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top right, var(--accent-color), var(--dark-color));
+            color: var(--text-color);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: clamp(1rem, 5vw, 2rem);
+            animation: fadeIn 1s ease-out;
+        }
+
+        header {
+            text-align: center;
+            padding: clamp(2rem, 4vw, 3rem);
+            background: rgba(255, 255, 255, 1);
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform: translateY(0);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(51, 51, 51, 0.1);
+        }
+
+        header:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(51, 51, 51, 0.2);
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-shadow: none;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .terms-content {
+            background: rgba(255, 255, 255, 1);
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .terms-section {
+            margin-bottom: clamp(2rem, 4vw, 2.5rem);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: clamp(0.8rem, 2vw, 1rem);
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+
+        .terms-section:hover {
+            transform: translateX(10px);
+            background: rgba(51, 51, 51, 0.05);
+            border: 1px solid rgba(51, 51, 51, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: clamp(0.8rem, 2vw, 1rem);
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .terms-content p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            font-size: clamp(1rem, 2vw, 1.1rem);
+            color: #444;
+            line-height: 1.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (hover: hover) {
+            .terms-section:hover {
+                background: rgba(51, 51, 51, 0.05);
+                transform: translateX(10px);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                max-width: 100%;
+                padding: 0.8rem;
+            }
+            
+            .terms-content {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .terms-content {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            .terms-section {
+                margin-bottom: 1.8rem;
+            }
+
+            .terms-content p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0.3rem;
+            }
+            
+            .container {
+                padding: 0.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            header {
+                padding: 1.5rem;
+            }
+
+            .terms-content {
+                padding: 1rem;
+                border-radius: 15px;
+            }
+
+            .terms-section {
+                padding: 0.6rem;
+                margin-bottom: 1.2rem;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .terms-content p {
+                font-size: 0.9rem;
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            body {
+                padding: 0.2rem;
+            }
+
+            .container {
+                padding: 0.3rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .terms-content {
+                padding: 0.8rem;
+            }
+
+            .terms-section {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Términos y Condiciones</h1>
+        </header>
+
+        <div class="terms-content">
+            <div class="terms-section">
+                <p><strong>TAITA XIT</strong> By Gian Carlos Castilla Gonzales</p>
+                <p>Bienvenido/a usuari@, porfavor lee nuestro Términos y Condiciones.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>1. Descripción del Servicio</h2>
+                <p>Ofrecemos productos y/o servicios digitales disponibles a través de nuestro sitio web, los cuales pueden incluir herramientas, contenido digital, software, licencias o asesoría. La entrega se realiza de forma digital al correo electrónico o cuenta registrada del usuario.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>2. Registro Automático del Usuario</h2>
+                <p>Al realizar una compra en nuestro sitio, el usuario acepta que sus datos personales básicos (nombre, correo electrónico y otros necesarios para el proceso) serán utilizados para crear automáticamente una cuenta de cliente en nuestra plataforma. Esta cuenta permitirá el acceso a los productos adquiridos, historial de compras, y soporte técnico cuando aplique.</p>
+                <p>El usuario será responsable de mantener segura su cuenta y sus credenciales de acceso. Cualquier actividad realizada desde dicha cuenta se considerará bajo su responsabilidad.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>3. Precios y Pagos</h2>
+                <p>Todos los precios están expresados en Soles e incluyen impuestos cuando sea aplicable. Aceptamos medios de pago seguros como tarjetas de crédito/débito, billeteras virtuales, entre otros. Nos reservamos el derecho de modificar precios sin previo aviso; sin embargo, se respetará el precio mostrado al momento de la compra.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>4. Entrega</h2>
+                <p>La entrega de productos digitales se realiza dentro de un plazo máximo de 24 HH tras la confirmación del pago. El acceso será enviado al correo registrado o directamente en el panel de usuario.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>5. Política de Reembolsos</h2>
+                <p>Debido a la naturaleza digital de nuestros productos, no realizamos reembolsos una vez entregado el producto, excepto en los siguientes casos:</p>
+                <p>• El producto entregado no coincide con la descripción.<br>
+                • El archivo está dañado o no es funcional.<br>
+                • El servicio contratado no fue entregado por razones atribuibles a la empresa.</p>
+                <p>Las solicitudes deben hacerse dentro de los 3 días hábiles posteriores a la compra, acompañadas de evidencia clara. Nos reservamos el derecho de aceptar o rechazar la solicitud tras evaluación.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>6. Uso Aceptable</h2>
+                <p>El usuario se compromete a utilizar nuestros productos de forma legal y ética. Está prohibido:</p>
+                <p>• Utilizar los productos con fines fraudulentos, ilícitos o no autorizados.<br>
+                • Revender, distribuir o modificar los productos sin permiso.<br>
+                • Compartir credenciales de acceso.</p>
+                <p>Cualquier infracción puede derivar en la suspensión o cancelación de la cuenta sin derecho a reembolso.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>7. Propiedad Intelectual</h2>
+                <p>Todo el contenido del sitio web, incluyendo textos, logotipos, imágenes, códigos, marcas, nombres comerciales y diseños, está protegido por leyes de propiedad intelectual. Su reproducción total o parcial sin autorización está prohibida.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>8. Limitación de Responsabilidad</h2>
+                <p>El uso de nuestros productos y servicios se realiza bajo responsabilidad del usuario. No garantizamos resultados específicos ni somos responsables por daños directos o indirectos derivados del uso del contenido adquirido.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>9. Modificaciones</h2>
+                <p>Nos reservamos el derecho de actualizar estos Términos y Condiciones sin previo aviso. Las nuevas versiones estarán disponibles en esta misma página, y su uso continuado del sitio constituirá aceptación de los cambios.</p>
+            </div>
+
+            <div class="terms-section">
+                <h2>Contacto</h2>
+                <p>Para consultas, soporte técnico o temas relacionados con estos términos, puede escribirnos a:</p>
+                <p>📧 taitaxit@hotmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
